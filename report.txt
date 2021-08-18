@@ -1,0 +1,31 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: synthesizer.py
+--------------------------------------------------------------------------------
+synthesizer.py:274:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'synthesizer.py'
+ outputting to 'synthesizer_test.py'
+--------------------------------------------------------------------------------
+
+24:8: INFO: Renamed 'tf.reset_default_graph' to 'tf.compat.v1.reset_default_graph'
+38:17: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+39:24: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+41:21: INFO: Added keywords to args of function 'tf.shape'
+42:21: INFO: Renamed 'tf.placeholder_with_default' to 'tf.compat.v1.placeholder_with_default'
+46:13: INFO: Renamed 'tf.variable_scope' to 'tf.compat.v1.variable_scope'
+57:22: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+63:20: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+64:22: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+65:16: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+274:8: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+--------------------------------------------------------------------------------
+
